@@ -1,0 +1,91 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+
+ function saltarlineas() {
+    document.write("<br>")
+    document.write("<br>")
+ };
+ function escribir() {
+    document.write("sigueme en likedin")
+    document.write("<br>") }
+ function imprimir(frase) {
+    document.write(frase)
+    //este codigo es para decir a una frase ya designada , es algo como automatico para no estar escribiendo el sigue... y el espacio. function ...() podemos ponerle cualquien nombre {lo que quiero q haga...}
+}
+ 
+ var anhoDeNacimiento = prompt("escriba su año de nacimiento")
+ var anohActual = prompt("escriba el año actual")
+
+ function calculoDeEdad(añoActual,añoDeNacimiento) {
+    return (anohActual - anhoDeNacimiento)
+ } 
+ //en la function la frase q lo acompaño  debe repetir con los datos del promt para q lo lea
+ anhototal = calculoDeEdad()
+
+ alert("Esto si es lenguaje de programacion!!");//esto se utiliza para agregar en javascript alert("...") esto sale un mensaje al cargar la pagina
+ 
+
+ //document.write("holaaaaaaaaa")
+ document.write("<h1>mi primer programa HTML!!</h1>");//para aparecer el texto en la pagina (en html) se escrive con un document.write("...")
+ document.write(1);
+ saltarlineas();
+ imprimir("Su edad es: " + anhototal)
+ saltarlineas()
+ escribir()
+ document.write((12+14-3)/2);
+ document.write("para sumar");
+ saltarlineas();
+ document.write("Para agregar texto y la operacion se pone el signo mas y la operacion en parentesis a esto se le llama concatenacion " + ((12+14-3)/2));
+ saltarlineas();
+ document.write("tambien se puede hacer texto numero u operacion y texto " + ((12+14-3)/2) + " todo se agreda con el signo mas y comillas");
+ saltarlineas();
+ escribir()
+ document.write("donde nos dirigirá? descubrelo <a href=https://github.com/Tyrone073>aqui</a>");
+ saltarlineas();
+
+ var anho = 2060;
+
+ document.write("Juan " + (anho-2011) + " años");
+ saltarlineas();
+ document.write("Pedro " + (anho-2008) + " años");
+ saltarlineas();
+ escribir()
+
+ var edadJuan = 11;
+ var edadPedro = 8;
+
+ nombre1 = "Juan";
+ nombre2 = "Pedro";
+
+ function calcularImc(peso,altura) {
+    imc = peso / (altura * altura);
+    return imc;
+    //o puedo poner solo el return (imc = peso / (altura * altura)); 
+ }
+
+ pesoNombre1 = 71
+ pesoNombre2 = 60
+ alturaNombre1 = 1.72
+ alturaNombre2 = 1.68
+ //imcJuan = pesoNombre1 / (alturaNombre1 * alturaNombre1)
+ //imcPedro = pesoNombre2 / (alturaNombre2 * alturaNombre2)
+
+
+ promedio = (edadJuan+edadPedro)/2;
+
+ document.write("el promedio de edad entre " + nombre1 + " y " + nombre2 + " es: " + Math.round(promedio));
+ saltarlineas()
+ imcJuan = calcularImc(pesoNombre1,alturaNombre1)
+ imprimir(" el indice de masa muscular de juan es: " + imcJuan)
+ saltarlineas()
+ imcPedro = calcularImc(pesoNombre2,alturaNombre2)
+ imprimir("el indice de masa muscular de Pedro es: " + imcPedro)
+ saltarlineas()
+
+ imprimir("holaaaa, me podrias seguir en likedin? sigueme <a href=https://linkedin.com/in/tyrone-pilay>aqui</a>")
+ imprimir("<h4> Gracias</h4>")
+
+ </script>
