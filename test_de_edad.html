@@ -1,32 +1,38 @@
 <meta charset="UTF-8">
+
 <h1> Ejercicio de edad 
 </h1>
+
 <script>
 
- function espacio() {
-    document.write("<br>");
-
- }
  function escribir(frase) {
     document.write(frase);
     document.write("<br>");
-
  }
+ 
  var name = prompt("Escriba du nombre")
- var ago = parseInt(prompt("escriba su edad"))
+ var ago = parseInt(prompt(name + " escriba su edad"))
  var you = name + " " + ago
 
 
- escribir("Usted: " + you + "años")
+ escribir("Usted: " + you + " años")
 
- if(ago > 18) {
+ if(ago >= 18) {
+   if(ago <120) {
     escribir("<h4>Es mayor de edad</h4>")
+   }
+   // para agregar un if con un limite se debe escribir dentro del if
  }
  if(ago < 18) {
+   if(ago > 1) {
     escribir("<h4>Es menor de edad</h4>")
+   }
  }
- if(ago == 18) {
-    escribir("<h4>Es mayor de edad</h4>")
+ if(ago >= 120) {
+   escribir("<h4>Su edad es irreal</h4>")
+ }
+ if(ago <= 0) {
+   escribir("<h2>maquina aun no nace!!</h2>")
  }
 
 </script>
