@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<h1>media de edad de familia </h1>
+
+<script>
+
+function salta() {
+    document.write("<br>")
+
+}
+
+ function escribir(frase) {
+    document.write(frase);
+    document.write("<br>");
+ } 
+ var cantidad = parseInt(prompt("ingrese cuantas personas son"))
+ var contador = 1;
+ var totalEdad = 0;
+
+
+ while (contador <= cantidad) {
+    
+    var edad = parseInt(prompt("ingrese la edad de la persona"));
+    var totalEdad = totalEdad + edad;
+    var contador = contador + 1;
+
+ }
+ 
+ var media = totalEdad / cantidad;
+ 
+ escribir("la mediadia de las edades es: " + media);
+ //var padre = 40
+ //var madre = 37
+ //var hermano = 18
+ //var hermana = 16
+ //var total = padre + madre + hermano + hermana;
+ //var media = total / 4
+
+ //escribir("la dedia de las edades es: " + media)
+
+
+</script>
