@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<h1>Juego de numero al azar</h1>
+
+<script>
+ function salta() {
+    document.write("<br>")
+
+}
+
+ function escribir(frase) {
+    document.write(frase);
+    document.write("<br>");
+ } 
+ 
+ 
+
+ alert("holaaaaaa me podrias seguir?");
+ var numeroCorrecto = Math.round(Math.random() * 10);
+ var numeroEscrito =parseInt(prompt("Escriba un numero del 1-10"));
+ var empieza = 3;
+ salta();
+ if (numeroCorrecto == numeroEscrito) {
+    escribir("correcto");
+
+
+ }
+ 
+ else {
+    escribir("incorrecto, el numero correcto era: " + numeroCorrecto);
+   
+ }
+
+ while (empieza >= 1) {
+    alert("La respuesta aparecera en: " + empieza);
+    var empieza = empieza - 1// la variable dice q el empieza(3) debe de restarse 1 para q haga cuenta regresiva.
+  } //while es para poner una cuenta de numeros , en este caso le puse empieza q seria (3) debe se mayor o igua q 1 para q limite y no se balla a -1 -2 ... .
+ escribir("sigueme en likedin <a href = https://linkedin.com/in/tyrone-pilay> aqui </a> y revisa mis proyectos en github <a href = https://github.com/Tyrone073> aqui </a>");
+
+ //tambien se puede poner for pero este tiene tres datos for(aqui va la variable  ;aqui va lo que va dentro de while pero las q van con() ; aqui va el ejercicio q quieres q haga ) {y aqui el texto q quieres q diga}
+  //for(var empieza;empieza;var empieza = empieza - 1) {
+  // alert("la respuesta aparecera en: " + empieza)
+ // }
+
+</script>
