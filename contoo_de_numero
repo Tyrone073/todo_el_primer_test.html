@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<h1>media de edad de familia </h1>
+
+<script>
+
+function salta() {
+    document.write("<br>")
+
+}
+
+ function escribir(frase) {
+    document.write(frase);
+    document.write("<br>");
+ } 
+ var num = 0;
+
+ while(num <= 100) {
+    escribir("numero: "+ num)
+    var num = num + 1
+ }
+
+</script>
