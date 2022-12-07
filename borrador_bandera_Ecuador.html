@@ -1,0 +1,67 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "yellow" //(caracteristicas como una var)
+    pincel.fillRect(0,0,600,400);
+
+    pincel.fillStyle = "blue" 
+    pincel.fillRect(0,200,600,200);
+    
+    pincel.fillStyle = "red" 
+    pincel.fillRect(0,300,600,200);
+
+    pincel.fillStyle = "red" 
+    pincel.beginPath();
+    pincel.moveTo(300,200);
+    pincel.lineTo(220,250);
+    pincel.lineTo(220,100);
+    pincel.fill(); //  punta isquierda de la bandera
+
+    pincel.fillStyle = "red" 
+    pincel.beginPath();
+    pincel.moveTo(300,200);
+    pincel.lineTo(380,250);
+    pincel.lineTo(380,100);
+    pincel.fill(); //  punta derecha de la bandera
+
+    pincel.fillStyle = "pink" 
+    pincel.beginPath();
+    pincel.moveTo(300,290);
+    pincel.lineTo(395,250);
+    pincel.lineTo(395,130);
+    pincel.fill();  //  punta derecha de la bandera del fuera
+    
+    pincel.fillStyle = "pink" 
+    pincel.beginPath();
+    pincel.moveTo(300,290);
+    pincel.lineTo(205,250);
+    pincel.lineTo(205,130);
+    pincel.fill(); //  punta isquierda de la bandera de fuera
+    
+
+    pincel.fillStyle = "green" 
+    pincel.moveTo(205,250);
+    pincel.quadraticCurveTo(300/1.3,350,395,250);
+    pincel.fill()
+    pincel.stroke();//  doble de abajo izquierdo 
+
+    pincel.fillStyle = "gray" 
+    pincel.moveTo(395,250);
+    pincel.quadraticCurveTo(285*1.3,350,205,250);
+    pincel.fill()
+    pincel.stroke();//  doble de abajo derecho
+    
+    
+    
+    pincel.fillStyle = "black"
+    pincel.scale(1,1*1.50)
+    pincel.beginPath();
+    pincel.arc(300,125,50,0,2*3.14);
+    pincel.stroke
+    pincel.fill();
+
+</script>
