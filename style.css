@@ -1,0 +1,31 @@
+body{
+    background: #e7e95f;
+}
+
+h1{    
+    text-align: center;
+    background: #3d3838;
+    height: 50px;
+    border: 10px solid #000;
+    padding: 10px;
+    margin: 40px;
+}
+
+#imagen{
+    width: 100%;
+}
+
+p{
+    text-align: center;
+    background: #dbc500;
+}
+
+
+
+#parrafo{
+    font-size: 20px
+}
+
+em strong{
+    color: aqua;
+}
